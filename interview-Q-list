@@ -1,0 +1,112 @@
+1. What is the difference between an alert box and a confirmation box ?
+2. What are JavaScript  cookies ?
+3. difference between localStorage and sessionStorage ?
+4. What should you use ? cookies or localStorage or sessionStorage ?
+5. Tell me 2 different between DOM vs BOM ?
+6. Can you discuss the types of browser API ?
+
+
+
+
+------------------------ 1  Ans  -----------------------
+
+
+Alert box is used if we want the information comes through to the user. Confirm box is used if we want the user to verify or accept something.
+
+Alert Box:------------------
+An alert box is used to inform/alert the user about an event.
+This type of popup box has only one button, named ‘OK’, and has no return value.
+Alert Box can be called using the function alert(“message”).
+
+
+Confirmation Box:---------------
+A Confirmation Box is used to provide user with a choice about an event.
+This type of popup box has two buttons, named ‘OK’ and ‘Cancel’, and return ‘true’ and ‘false’ when respective buttons are clicked.
+Confirmation Box can be called using the function confirm(“message”).
+
+
+------------------------ 2  Ans  -----------------------
+
+// What is cookie
+
+1. Data stored in small text file
+2. Naturally sent by visited websites.
+3. Sent to users computer throught browser.
+4. Is not a program, doesn't perform any function.
+5. stored in key-value pair.
+
+
+------------------------ 3  Ans  -----------------------
+
+// Local Storage:
+
+// This read-only interface property provides access to the Document’s local storage object, the stored data is stored across browser sessions. Similar to sessionStorage, except that localStorage data gets cleared when the page session ends – that is when the page is closed. It is cleared when the last “private” tab of a browser is closed (localStorage data for a document loaded in a private browsing or incognito session).
+
+
+
+//Local storage has 4 methods:
+
+//setItem() Method – This method takes two parameters one is key and another one is value. It is used to store the value in a particular location with the name of the key.
+localStorage.setItem(key, value)
+
+
+//getItem() Method – This method takes one parameter that is key which is used to get the value stored with a particular key name.
+localStorage.getItem(key)
+
+
+//removeItem() Method – This is method is used to remove the value stored in the memory in reference to key.
+localStorage.removeItem(key)
+
+
+//clear() Method – This method is used to clear all the values stored in localstorage.
+localStorage.clear()
+
+
+// ----------------------------------------
+
+// What is Session Storage?
+
+// Session Storage objects can be accessed using the sessionStorage read-only property. The difference between sessionStorage and localStorage is that localStorage data does not expire, whereas sessionStorage data is cleared when the page session ends.
+
+
+//Session Storage has 4 methods:
+
+//setItem() Method – This method takes two parameters one is key and another one is value. It is used to store the value in a particular location with the name of the key.
+sessionStorage.setItem(key, value)
+
+
+//getIteam() Method – This method takes one parameter that is key which is used to get the value stored with a particular key name.
+sessionStorage.getItem(key)
+
+
+//removeItem() Method – This is method is used to remove the value stored in the memory in reference to key.
+sessionStorage.removeItem(key)
+
+
+//clear() Method – This method is used to clear all the values stored in the session storage
+sessionStorage.clear()
+
+------------------------ 4  Ans  -----------------------
+
+For most cases, we use the localStorage object if we want some data to be on the browser. If we want it on the server, then we use cookies, and the sessionStorage is used when we want to destroy the data whenever that specific tab gets closed or the season is closed by the user.
+
+------------------------ 5  Ans  -----------------------
+
+The Document Object Model (DOM) defines a standard for accessing documents. The Browser Object Model (BOM) allows JavaScript to "talk to" the browser. In the HTML DOM, the Element object represents an HTML element, like P, DIV, A, TABLE, or any other HTML element.
+
+------------------------ 6  Ans  -----------------------
+
+What are browsers API?
+Browser APIs are APIs that are built into the browser and provide native features that can also be used in a web app. These can also be called web APIs. With the use of web APIs, we can easily implement certain features with fewer lines of code, such as: making network requests. managing client-side storage.
+
+
+API stands for Application Programming Interface, which is a set of protocols and definitions that allows communication between two software. APIs provide instructions for building and integrating application software that can access the features or data of another application.
+
+
+Browser APIs are APIs that are built into the browser and provide native features that can also be used in a web app. These can also be called web APIs.
+
+With the use of web APIs, we can easily implement certain features with fewer lines of code, such as:
+
+1. making network requests
+2. managing client-side storage
+3. retrieving device media streams, etc.
